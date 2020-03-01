@@ -93,9 +93,7 @@ else:
         'default': {
             'ENGINE': dj_database_url.config(
                 default=os.environ["DATABASE_URL"]
-            ),
-            'USER': os.environ["USERNAME"],
-            'PASSWORD': os.environ["PASSWORD"],
+            )
         }
     }
 
