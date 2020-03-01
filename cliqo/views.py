@@ -49,3 +49,12 @@ class MattersUpdateView(generic.UpdateView):
     fields = ['client_name', 'nature_of_matter', 'price_estimate', 'contact_person']
     template_name_suffix = '_update'
     success_url = reverse_lazy('cliqo:matters')
+
+
+class MattersFocusDetailView(generic.ListView):
+    model = NewMatter
+    template_name_suffix = '_main'
+
+    def get_context_data(self, **kwargs):
+        context = super(). get_context_data(**kwargs)
+        return context

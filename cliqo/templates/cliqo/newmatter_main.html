@@ -1,0 +1,85 @@
+{% extends 'cliqo/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <a href="{% url 'cliqo:matters' %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
+
+    <h1 class="h3 mb-0 text-gray-800">{{ object.client_name }}</h1>
+    <a href="{% url 'cliqo:new-matter' %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-pen fa-sm text-white-50"></i> Create new task</a>
+</div>
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Matter Element -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h2 mb-0 mr-3 font-weight-bold text-gray-800">Tasks</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn-success btn-circle">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matter Element -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h2 mb-0 mr-3 font-weight-bold text-gray-800">Documents</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn-success btn-circle">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Matter Element -->
+    <div class="col-xl-4 col-md-6 mb-4">
+        <div class="card border-left-info shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="row no-gutters align-items-center">
+                            <div class="col-auto">
+                                <div class="h2 mb-0 mr-3 font-weight-bold text-gray-800">Accounts</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <a href="" class="btn btn-success btn-circle">
+                          <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

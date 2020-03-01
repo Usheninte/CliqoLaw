@@ -4,7 +4,11 @@
 
 {% block content %}
 <!-- Return to Matters page -->
-<a href="{% url 'cliqo:matters' %}"><h1 style="padding-bottom: 1em;"><i class="fas fa-arrow-circle-left"></i></h1></a>
+<div style="padding-bottom: 1em;">
+    <a href="{% url 'cliqo:matters' %}"
+       class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i  class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
+</div>
 
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between col-12" style="padding-bottom: 3em;">
