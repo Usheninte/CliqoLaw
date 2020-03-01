@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_update.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqolaw/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqolaw/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,20 +12,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="35" column="58" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/home.html">
+        <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="48" />
+            <state relative-caret-position="377">
+              <caret line="154" selection-start-line="154" selection-end-line="154" />
+              <folding>
+                <element signature="e#309#318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -56,7 +45,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cliqolaw/settings.py" />
         <option value="$PROJECT_DIR$/cliqolaw/urls.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/dashboard.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/nav.html" />
@@ -77,6 +65,7 @@
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" />
+        <option value="$PROJECT_DIR$/cliqolaw/settings.py" />
       </list>
     </option>
   </component>
@@ -104,12 +93,6 @@
               <item name="cliqolaw-mvp" type="b2602c69:ProjectViewProjectNode" />
               <item name="cliqolaw-mvp" type="462c0819:PsiDirectoryNode" />
               <item name="cliqo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cliqolaw-mvp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cliqolaw-mvp" type="462c0819:PsiDirectoryNode" />
-              <item name="cliqo" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cliqolaw-mvp" type="b2602c69:ProjectViewProjectNode" />
@@ -243,16 +226,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-          <folding>
-            <element signature="e#309#318#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -438,6 +411,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="39" lean-forward="true" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqolaw/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="154" selection-start-line="154" selection-end-line="154" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

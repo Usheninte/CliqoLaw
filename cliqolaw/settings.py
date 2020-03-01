@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 import sys
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -20,11 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'vu6=^i**9wul1+23_dh1!@57lqlx7l3e7jyo)1ly3t@1-&^1!i'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+DEV_MODE = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -72,16 +74,35 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'cliqolaw.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# Checking for current mode and setting appropriate env configs
+if DEV_MODE:
+    # development secret key config
+    SECRET_KEY = 'vu6=^i**9wul1+23_dh1!@57lqlx7l3e7jyo)1ly3t@1-&^1!i'
+    # development database config
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
+else:
+    # production secret key config
+    SECRET_KEY = os.environ["SECRET_KEY"]
+    # production database config
+    DATABASES = {
+        'default': {
+            'ENGINE': dj_database_url.config(
+                default=os.environ["DATABASE_URL"]
+            ),
+            'USER': os.environ["USERNAME"],
+            'PASSWORD': os.environ["PASSWORD"],
+        }
+    }
+
+# Conditional to enable testing in local development environment
+if 'test' in sys.argv or 'test_coverage' in sys.argv: #Covers regular testing and django-coverage
+    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
+    DATABASES['default']['NAME'] = ':memory:'
 
 
 # Password validation
@@ -116,11 +137,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-# Conditional to enable testing in local development environment
-if 'test' in sys.argv or 'test_coverage' in sys.argv: #Covers regular testing and django-coverage
-    DATABASES['default']['ENGINE'] = 'django.db.backends.sqlite3'
-    DATABASES['default']['NAME'] = ':memory:'
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -133,3 +149,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'cliqo/static'),
 )
+
+# Activate Django-Heroku
+django_heroku.settings(locals())
