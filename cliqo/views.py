@@ -1,5 +1,7 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
+from django.views import generic
 from .forms import NewMatterForm
+from .models import NewMatter
 
 
 def home(request):
@@ -10,8 +12,13 @@ def dashboard(request):
     return render(request, 'cliqo/dashboard.html')
 
 
-def matters(request):
-    return render(request, 'cliqo/matters.html')
+class MattersListView(generic.ListView):
+    model = NewMatter
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
 
 def new_matter(request):
     if request.method == 'POST':
@@ -22,7 +29,7 @@ def new_matter(request):
             price_estimate = new_matter_form.cleaned_data['price_estimate']
             contact_person = new_matter_form.cleaned_data['contact_person']
             new_matter_form.save()
-            return redirect(reversed('cliqo:matters'))
+            return redirect(reverse('cliqo:matters'))
     else:
         new_matter_form = NewMatterForm()
 
