@@ -43,3 +43,9 @@ class MattersDeleteView(generic.DeleteView):
     template_name_suffix = '_delete'
     success_url = reverse_lazy('cliqo:matters')
 
+
+class MattersUpdateView(generic.UpdateView):
+    model = NewMatter
+    fields = ['client_name', 'nature_of_matter', 'price_estimate', 'contact_person']
+    template_name_suffix = '_update'
+    success_url = reverse_lazy('cliqo:matters')

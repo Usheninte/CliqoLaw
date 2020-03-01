@@ -29,7 +29,7 @@
                           <div class="text-lg font-weight-bold text-info text-uppercase">{{ matter.client_name }}</div>
                       </div>
                       <div class="col-1">
-                          <a href="" class="btn btn-circle btn-sm">
+                          <a href="{% url 'cliqo:update-matter' matter.id %}" class="btn btn-circle btn-sm">
                               <i style="padding: 0.5em; color: #4e73df;" class="fas fa-pen-fancy fa-2x"></i>
                           </a>
                       </div>

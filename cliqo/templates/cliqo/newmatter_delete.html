@@ -3,6 +3,9 @@
 {% load static %}
 
 {% block content %}
+<!-- Return to Matters page -->
+<a href="{% url 'cliqo:matters' %}"><h1 style="padding-bottom: 1em;"><i class="fas fa-arrow-circle-left"></i></h1></a>
+
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between col-12" style="padding-bottom: 3em;">
     <h1 class="h3 mb-0 text-gray-800">Delete {{ object }}</h1>
