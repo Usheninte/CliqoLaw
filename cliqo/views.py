@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse
+from django.urls import reverse_lazy
 from django.views import generic
 from .forms import NewMatterForm
 from .models import NewMatter
@@ -10,14 +11,6 @@ def home(request):
 
 def dashboard(request):
     return render(request, 'cliqo/dashboard.html')
-
-
-class MattersListView(generic.ListView):
-    model = NewMatter
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        return context
 
 
 def new_matter(request):
@@ -35,3 +28,18 @@ def new_matter(request):
 
     return render(request, 'cliqo/new_matter.html',
                   {'new_matter_form': new_matter_form})
+
+
+class MattersListView(generic.ListView):
+    model = NewMatter
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+
+class MattersDeleteView(generic.DeleteView):
+    model = NewMatter
+    template_name_suffix = '_delete'
+    success_url = reverse_lazy('cliqo:matters')
+

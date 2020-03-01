@@ -21,18 +21,23 @@
               <div class="card-body">
                   <div class="row no-gutters align-items-center">
                       <div class="col-1">
-                          <a href="#" class="btn btn-danger btn-circle btn-sm">
+                          <a href="{% url 'cliqo:delete-matter' matter.id %}" class="btn btn-danger btn-circle btn-sm">
                               <i class="fas fa-trash"></i>
                           </a>
                       </div>
                       <div class="col-2">
                           <div class="text-lg font-weight-bold text-info text-uppercase">{{ matter.client_name }}</div>
                       </div>
+                      <div class="col-1">
+                          <a href="" class="btn btn-circle btn-sm">
+                              <i style="padding: 0.5em; color: #4e73df;" class="fas fa-pen-fancy fa-2x"></i>
+                          </a>
+                      </div>
                       <div class="col">
                           <h6 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ matter.nature_of_matter }}</h6>
                       </div>
                       <div class="col-1">
-                          <a href="" class="btn btn-primary btn-circle">
+                          <a href="" class="btn btn-success btn-circle">
                               <i class="fas fa-arrow-right"></i>
                           </a>
                       </div>
