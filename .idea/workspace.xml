@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="" />
+    <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,10 +18,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+            <state relative-caret-position="21">
+              <caret line="246" column="88" selection-start-line="246" selection-start-column="88" selection-end-line="246" selection-end-column="88" />
               <folding>
-                <element signature="e#16347#16353#0" expanded="true" />
+                <element signature="e#12924#12930#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -25,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="147">
+              <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -81,6 +86,14 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace>href=&quot;&quot;</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -89,8 +102,8 @@
         <option value="$PROJECT_DIR$/cliqo/urls.py" />
         <option value="$PROJECT_DIR$/cliqolaw/urls.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/dashboard.html" />
-        <option value="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/nav.html" />
+        <option value="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" />
       </list>
     </option>
@@ -99,6 +112,7 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -134,6 +148,14 @@
               <item name="cliqolaw-mvp" type="b2602c69:ProjectViewProjectNode" />
               <item name="cliqolaw-mvp" type="462c0819:PsiDirectoryNode" />
               <item name="cliqo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="cliqo" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cliqolaw-mvp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cliqolaw-mvp" type="462c0819:PsiDirectoryNode" />
+              <item name="cliqo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -155,6 +177,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -258,20 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -279,12 +288,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/static/cliqo/css/sb-admin-2.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="28" selection-start-column="28" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="76" column="45" selection-start-line="76" selection-start-column="45" selection-end-line="76" selection-end-column="45" />
+        <state relative-caret-position="21">
+          <caret line="246" column="88" selection-start-line="246" selection-start-column="88" selection-end-line="246" selection-end-column="88" />
           <folding>
-            <element signature="e#16347#16353#0" expanded="true" />
+            <element signature="e#12924#12930#0" expanded="true" />
           </folding>
         </state>
       </provider>
