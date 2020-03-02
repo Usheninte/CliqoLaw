@@ -28,7 +28,7 @@ DEBUG = True
 
 DEV_MODE = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['cliqo-demo.herokuapp.com', 'cliqolaw.co', 'localhost:8000']
 
 
 # Application definition
