@@ -49,14 +49,24 @@ class MattersDeleteView(generic.DeleteView):
 #     template_name_suffix = '_update'
 #     success_url = reverse_lazy('cliqo:matter-focus')
 
-
-class MattersFocusDetailView(generic.DetailView):
-    model = NewMatter
-    template_name_suffix = '_main'
+class MattersHeaderView(generic.TemplateView):
+    template_name = 'cliqo/newmatter_main.html'
 
     def get_context_data(self, **kwargs):
-        context = super(). get_context_data(**kwargs)
+        context = super().get_context_data(**kwargs)
+        context['matters'] = NewMatter.objects.all()
+        context['clients'] = ClientInfo.objects.all()
+        context['collaborators'] = CollaboratorInfo.objects.all()
+        print(context['collaborators'])
         return context
+
+# class MattersHeaderView(generic.DetailView):
+#     model = NewMatter
+#     template_name_suffix = '_main'
+#
+#     def get_context_data(self, **kwargs):
+#         context = super(MattersHeaderView, self).get_context_data(**kwargs)
+#         return context
 
 
 def new_client(request):

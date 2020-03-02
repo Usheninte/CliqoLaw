@@ -9,9 +9,8 @@
     <a href="{% url 'cliqo:matters' %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
 
-    <h1 class="h3 mb-0 text-gray-800">{{ object.client_name }}</h1>
-<!--    <a href="{% url 'cliqo:update-matter' object.id %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">-->
-<!--        <i class="fas fa-pen fa-sm text-white-50"></i> Update matter</a>-->
+    <h1 class="h3 mb-0 text-gray-800">{{ matters.reference_number }}</h1>
+    <span></span>
 </div>
 
 <!-- Content Row -->
@@ -82,4 +81,43 @@
         </div>
     </div>
 </div>
+
+<div class="row">
+    <div class="col-lg-6 mb-3">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Pricing estimate</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>${{ matters.price_estimate }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+           </div>
+       </div>
+    </div>
+    <div class="col-lg-6 mb-4">
+        <div>{{ clients.client_name }}</div>
+        <br />
+        <ul>
+            {% for item in matters%}
+            <li>{{ item.reference_number }}</li>
+            {% endfor %}
+
+            {% for item in clients%}
+            <li>{{ item.client_name }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+ </div>
 {% endblock %}
