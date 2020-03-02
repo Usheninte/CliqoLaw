@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-DEV_MODE = False
+DEV_MODE = True
 
 ALLOWED_HOSTS = ['cliqo-demo.herokuapp.com', 'cliqolaw.co', 'localhost:8000']
 

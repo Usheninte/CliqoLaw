@@ -48,10 +48,10 @@ class MattersUpdateView(generic.UpdateView):
     model = NewMatter
     fields = ['client_name', 'nature_of_matter', 'price_estimate', 'contact_person']
     template_name_suffix = '_update'
-    success_url = reverse_lazy('cliqo:matters')
+    success_url = reverse_lazy('cliqo:matter-focus')
 
 
-class MattersFocusDetailView(generic.ListView):
+class MattersFocusDetailView(generic.DetailView):
     model = NewMatter
     template_name_suffix = '_main'
 
