@@ -20,6 +20,7 @@ def new_matter(request):
             reference_number = new_matter_form.cleaned_data['reference_number']
             nature_of_matter = new_matter_form.cleaned_data['nature_of_matter']
             price_estimate = new_matter_form.cleaned_data['price_estimate']
+            hourly_rate = new_matter_form.cleaned_data['hourly_rate']
             new_matter_form.save()
             return redirect(reverse('cliqo:new-client'))
     else:
@@ -49,7 +50,7 @@ class MattersDeleteView(generic.DeleteView):
 #     template_name_suffix = '_update'
 #     success_url = reverse_lazy('cliqo:matter-focus')
 
-class MattersHeaderView(generic.TemplateView):
+class MattersMainView(generic.TemplateView):
     template_name = 'cliqo/newmatter_main.html'
 
     def get_context_data(self, **kwargs):
@@ -57,7 +58,6 @@ class MattersHeaderView(generic.TemplateView):
         context['matters'] = NewMatter.objects.all()
         context['clients'] = ClientInfo.objects.all()
         context['collaborators'] = CollaboratorInfo.objects.all()
-        print(context['collaborators'])
         return context
 
 # class MattersHeaderView(generic.DetailView):

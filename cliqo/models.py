@@ -2,9 +2,10 @@ from django.db import models
 
 
 class NewMatter(models.Model):
-    reference_number = models.CharField(max_length=100, unique=True, default="cliqo4321")
+    reference_number = models.CharField(max_length=100, unique=True, default="#REF0000")
     nature_of_matter = models.TextField()
     price_estimate = models.IntegerField()
+    hourly_rate = models.IntegerField(default=100)
 
     def __str__(self):
         return "Matter %s" % self.reference_number

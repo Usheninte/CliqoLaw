@@ -5,7 +5,7 @@ from .models import NewMatter, ClientInfo, CollaboratorInfo
 class NewMatterForm(ModelForm):
     class Meta:
         model = NewMatter
-        fields = ['reference_number', 'nature_of_matter', 'price_estimate']
+        fields = ['reference_number', 'nature_of_matter', 'price_estimate', 'hourly_rate']
 
 
 class ClientInfoForm(ModelForm):
