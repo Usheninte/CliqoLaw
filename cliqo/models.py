@@ -16,7 +16,7 @@ class ClientInfo(models.Model):
                             on_delete=models.CASCADE, verbose_name='matter reference')
     client_name = models.CharField(max_length=200)
     contact_phone = models.CharField(max_length=20)
-    contact_email = models.CharField(max_length=200)
+    contact_email = models.EmailField()
     contact_address = models.TextField()
 
     def __str__(self):
@@ -29,16 +29,16 @@ class CollaboratorInfo(models.Model):
     full_name = models.CharField(max_length=200)
     phone_number = models.CharField(max_length=20)
     role = models.CharField(max_length=100)
-    email = models.CharField(max_length=200)
+    email = models.EmailField()
 
     def __str__(self):
         return "%s - Collaborator" % self.full_name
 
 
-# class Outcomes(models.Model):
-#     ref = models.ForeignKey(NewMatter, to_field='reference_number',
-#                             on_delete=models.CASCADE, verbose_name='matter reference')
-#     goal = models.CharField(max_length=300)
-#
-#     def __str__(self):
-#         return self.goal
+class Outcomes(models.Model):
+    ref = models.ForeignKey(NewMatter, to_field='reference_number',
+                            on_delete=models.CASCADE, verbose_name='matter reference')
+    goal = models.CharField(max_length=300)
+
+    def __str__(self):
+        return self.goal

@@ -1,5 +1,5 @@
 from django.forms import ModelForm
-from .models import NewMatter, ClientInfo, CollaboratorInfo
+from .models import NewMatter, ClientInfo, CollaboratorInfo, Outcomes
 
 
 class NewMatterForm(ModelForm):
@@ -18,3 +18,9 @@ class CollaboratorInfoForm(ModelForm):
     class Meta:
         model = CollaboratorInfo
         fields = ['ref', 'full_name', 'phone_number', 'role', 'email']
+
+
+class OutcomesForm(ModelForm):
+    class Meta:
+        model = Outcomes
+        fields = ['goal']

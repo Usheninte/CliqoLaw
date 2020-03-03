@@ -58,6 +58,7 @@ class MattersMainView(generic.TemplateView):
         context['matters'] = NewMatter.objects.all()
         context['clients'] = ClientInfo.objects.all()
         context['collaborators'] = CollaboratorInfo.objects.all()
+        # context['outcomes'] =
         return context
 
 # class MattersHeaderView(generic.DetailView):
