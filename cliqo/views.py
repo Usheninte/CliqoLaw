@@ -13,6 +13,13 @@ def dashboard(request):
     return render(request, 'cliqo/dashboard.html')
 
 
+class CreateMatterMain(generic.CreateView):
+    model = NewMatter
+    fields = ['reference_number', 'nature_of_matter', 'price_estimate', 'hourly_rate']
+    template_name_suffix = '_main_create_form'
+    success_url = reverse_lazy('cliqo:matters')
+
+
 class MattersListView(generic.ListView):
     model = NewMatter
 
@@ -56,7 +63,7 @@ class MattersMainView(generic.DetailView):
 #     else:
 #         new_matter_form = NewMatterForm()
 #
-#     return render(request, 'cliqo/new_matter.html',
+#     return render(request, 'cliqo/newmatter_main_create_form.html',
 #                   {'new_matter_form': new_matter_form})
 
 

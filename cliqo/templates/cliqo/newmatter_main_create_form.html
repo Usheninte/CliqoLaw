@@ -11,10 +11,10 @@
     <!-- Content Row -->
     <div class="row">
         <div class="col-4" style="padding: 2em 4em;">
-            <form action="{% url 'cliqo:new-matter' %}" method="post">
+            <form action="{% url 'cliqo:create-matter' %}" method="post">
                 {% csrf_token %}
                 <div>
-                    {{ new_matter_form }}
+                    {{ form }}
                 </div>
                 <button type="submit" class="btn btn-success btn-icon-split" style="margin-top: 2em">
                     <span class="icon text-white-50">
