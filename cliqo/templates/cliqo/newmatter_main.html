@@ -9,12 +9,10 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
     <a href="{% url 'cliqo:matters' %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
-    {% for client in clients %}
-    <h1 class="h3 mb-0 text-gray-800">{{ client.client_name }}</h1>
-    {% endfor %}
-    {% for matter in matters %}
-    <h1 class="h3 mb-0 text-gray-800">{{ matter.reference_number }}</h1>
-    {% endfor %}
+
+
+    <h1 class="h3 mb-0 text-gray-800">{{}}</h1>
+
 
     <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         Edit <i class="fas fa-pen fa-sm text-white-50"></i></a>
@@ -93,12 +91,11 @@
     <div class="col-lg-6 mb-3">
         <div class="card shadow mb-4">
             <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Nature of Matter</h6>
+                <h6 class="m-0 font-weight-bold text-primary">Matter Details</h6>
             </div>
             <div class="card-body">
-                {% for matter in matters %}
-                <p>{{ matter.nature_of_matter }}</p>
-                {% endfor %}
+                <p class="h5 mb-0 text-gray-800">Reference Number: {{}}</p>
+                <p>{{}}</p>
            </div>
        </div>
     </div>
@@ -137,15 +134,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for matter in matters %}
                             <tr>
-                                {% with rate=matter.hourly_rate %}
-                                <td>{{ matter.hourly_rate }}</td>
-                                <td>{{ matter.price_estimate|intdiv:rate }}</td>
-                                <td>${{ matter.price_estimate }}</td>
-                                {% endwith %}
+<!--                                {% with rate=matter.hourly_rate %}-->
+                                <td>{{}}</td>
+                                <td>{{}}</td>
+                                <td>${{}}</td>
+<!--                                {% endwith %}-->
                             </tr>
-                            {% endfor %}
                         </tbody>
                     </table>
                 </div>
@@ -160,7 +155,7 @@
              <div class="card-body">
                  <div class="text-center">
                      <div class="table-responsive">
-                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                         <table class="table table-bordered" width="100%" cellspacing="0">
                              <thead>
                                 <tr>
                                     <th>Name</th>
@@ -171,12 +166,10 @@
                              </thead>
                              <tbody>
                                  <tr>
-                                     {% for collab in collaborators %}
-                                     <td>{{ collab.full_name }}</td>
-                                     <td>{{ collab.role }}</td>
-                                     <td>{{ collab.phone_number }}</td>
-                                     <td>{{ collab.email }}</td>
-                                     {% endfor %}
+                                     <td>{{}}</td>
+                                     <td>{{}}</td>
+                                     <td>{{}}</td>
+                                     <td>{{}}</td>
                                  </tr>
                              </tbody>
                          </table>
