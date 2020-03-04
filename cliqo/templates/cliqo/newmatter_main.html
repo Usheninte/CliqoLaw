@@ -15,7 +15,7 @@
     <h1 class="h3 mb-0 text-gray-800">{{ matter.client_name }}</h1>
 
 
-    <a href="" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+    <a href="{% url 'cliqo:update-matter' matter.id %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
         Edit <i class="fas fa-pen fa-sm text-white-50"></i></a>
 </div>
 

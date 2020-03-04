@@ -62,19 +62,21 @@ class MattersMainView(generic.DetailView):
     template_name_suffix = '_main'
 
     def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['matters'] = NewMatter.objects.all()
+        context = super(MattersMainView, self).get_context_data(**kwargs)
+        context['matters'] = NewMatter.objects.filter(pk=self.get_object().pk)
         return context
 
 
 class MattersUpdateView(generic.UpdateView):
     model = NewMatter
     fields = ['reference_number', 'client_name',
-                  'nature_of_matter', 'price_estimate',
-                  'hour_estimate', 'hourly_rate']
+              'nature_of_matter', 'price_estimate',
+              'hour_estimate', 'hourly_rate']
     template_name_suffix = '_update'
-    success_url = reverse_lazy('cliqo:matter-focus')
 
+    def get_success_url(self):
+        user_id = self.kwargs['pk']
+        return reverse_lazy('cliqo:matter-focus', kwargs={'pk': user_id})
 
 # def new_collaborator(request):
 #     if request.method == 'POST':
