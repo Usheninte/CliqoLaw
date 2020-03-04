@@ -7,6 +7,7 @@ coverage==5.0.3
 dj-database-url==0.5.0
 Django==3.0.2
 django-heroku==0.3.1
+django-mathfilters==1.0.0
 django-nose==1.4.6
 django-storages==1.8
 google-api-core==1.16.0
