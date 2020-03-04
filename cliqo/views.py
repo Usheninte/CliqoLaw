@@ -15,8 +15,9 @@ def dashboard(request):
 
 class CreateMatterMain(generic.CreateView):
     model = NewMatter
-    fields = ['reference_number', 'nature_of_matter', 'price_estimate', 'hourly_rate',
-              'client_name', 'contact_name', 'contact_phone', 'contact_email', 'contact_address']
+    fields = ['reference_number', 'client_name',
+              'nature_of_matter', 'price_estimate',
+              'hour_estimate', 'hourly_rate',]
     template_name_suffix = '_create'
     success_url = reverse_lazy('cliqo:matters')
 
