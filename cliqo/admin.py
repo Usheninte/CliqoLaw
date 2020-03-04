@@ -26,5 +26,7 @@ class OutcomeAdmin(admin.ModelAdmin):
 
 
 admin.site.register(NewMatter, NewMatterAdmin)
+admin.site.register(NewClient, NewClientAdmin)
+admin.site.register(NewContact, NewContactAdmin)
 admin.site.register(CollaboratorInfo, CollaboratorInfoAdmin)
 admin.site.register(Outcome, OutcomeAdmin)

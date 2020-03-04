@@ -17,7 +17,7 @@ class CreateMatterMain(generic.CreateView):
     model = NewMatter
     fields = ['reference_number', 'client_name',
               'nature_of_matter', 'price_estimate',
-              'hour_estimate', 'hourly_rate',]
+              'hour_estimate', 'hourly_rate']
     template_name_suffix = '_create'
     success_url = reverse_lazy('cliqo:matters')
 
@@ -67,11 +67,13 @@ class MattersMainView(generic.DetailView):
         return context
 
 
-# class MattersUpdateView(generic.UpdateView):
-#     model = NewMatter
-#     fields = ['client_name', 'nature_of_matter', 'price_estimate', 'contact_person']
-#     template_name_suffix = '_update'
-#     success_url = reverse_lazy('cliqo:matter-focus')
+class MattersUpdateView(generic.UpdateView):
+    model = NewMatter
+    fields = ['reference_number', 'client_name',
+                  'nature_of_matter', 'price_estimate',
+                  'hour_estimate', 'hourly_rate']
+    template_name_suffix = '_update'
+    success_url = reverse_lazy('cliqo:matter-focus')
 
 
 # def new_collaborator(request):

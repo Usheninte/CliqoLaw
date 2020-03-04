@@ -99,11 +99,9 @@
                         </thead>
                         <tbody>
                             <tr>
-                                {% with rate=matter.hourly_rate %}
                                 <td>{{ matter.hourly_rate }}</td>
-                                <td>{{ matter.price_estimate|intdiv:rate}}</td>
+                                <td>{{ matter.hour_estimate}}</td>
                                 <td>${{ matter.price_estimate }}</td>
-                                {% endwith %}
                             </tr>
                         </tbody>
                     </table>
