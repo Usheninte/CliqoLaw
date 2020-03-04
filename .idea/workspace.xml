@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/mod_old.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cliqo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/new_client.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main_create_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cliqo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="77" column="65" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+            <state relative-caret-position="147">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -53,11 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cliqo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="242">
+              <caret line="53" column="86" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
             </state>
           </provider>
         </entry>
@@ -123,7 +118,6 @@
         <option value="$PROJECT_DIR$/tests/cliqo/test_models.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_delete.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/home.html" />
-        <option value="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/dashboard.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_update.html" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/new_client.html" />
@@ -137,10 +131,11 @@
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_create_client_info.html" />
         <option value="$PROJECT_DIR$/cliqo/mod_old.py" />
         <option value="$PROJECT_DIR$/cliqo/urls.py" />
-        <option value="$PROJECT_DIR$/cliqo/models.py" />
         <option value="$PROJECT_DIR$/cliqo/admin.py" />
         <option value="$PROJECT_DIR$/cliqo/views.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html" />
+        <option value="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" />
+        <option value="$PROJECT_DIR$/cliqo/models.py" />
       </list>
     </option>
   </component>
@@ -254,12 +249,12 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32913166" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
@@ -423,13 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4456">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -519,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -536,10 +517,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="35" column="52" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="77" column="65" selection-start-line="77" selection-start-column="65" selection-end-line="77" selection-end-column="65" />
+        <state relative-caret-position="147">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="53" column="86" selection-start-line="53" selection-start-column="86" selection-end-line="53" selection-end-column="86" />
         </state>
       </provider>
     </entry>
