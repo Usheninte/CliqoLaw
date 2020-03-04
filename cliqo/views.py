@@ -21,27 +21,6 @@ class CreateMatterMain(generic.CreateView):
     template_name_suffix = '_create'
     success_url = reverse_lazy('cliqo:matters')
 
-# def new_matter(request):
-#     if request.method == 'POST':
-#         new_matter_form = NewMatterForm(request.POST)
-#         if new_matter_form.is_valid():
-#             reference_number = new_matter_form.cleaned_data['reference_number']
-#             nature_of_matter = new_matter_form.cleaned_data['nature_of_matter']
-#             price_estimate = new_matter_form.cleaned_data['price_estimate']
-#             hourly_rate = new_matter_form.cleaned_data['hourly_rate']
-#             client_name = new_matter_form.cleaned_data['client_name']
-#             contact_name = new_matter_form.cleaned_data['contact_name']
-#             contact_phone = new_matter_form.cleaned_data['contact_phone']
-#             contact_email = new_matter_form.cleaned_data['contact_email']
-#             contact_address = new_matter_form.cleaned_data['contact_address']
-#             new_matter_form.save()
-#             return redirect(reverse('cliqo:new-client'))
-#     else:
-#         new_matter_form = NewMatterForm()
-#
-#     return render(request, 'cliqo/newmatter_create.html',
-#                   {'new_matter_form': new_matter_form})
-
 
 class MattersListView(generic.ListView):
     model = NewMatter
