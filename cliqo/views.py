@@ -1,8 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.urls import reverse_lazy
 from django.views import generic
-# from .forms import NewMatterForm
-from .models import NewMatter, CollaboratorInfo, Outcome
+from .models import NewMatter
 
 
 def home(request):

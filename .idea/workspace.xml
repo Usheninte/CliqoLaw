@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="" />
+    <list default="true" id="8d09f189-d033-415f-bf41-8c1206b9334b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/templates/cliqo/new_collaborator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cliqo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cliqo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,44 +21,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliqo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1470">
-              <caret line="70" column="56" lean-forward="true" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#54#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-843">
+              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
+        <entry file="file://$PROJECT_DIR$/cliqo/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="441">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding>
-                <element signature="e#309#318#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliqo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+            <state relative-caret-position="252">
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -71,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cliqo/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+            <state relative-caret-position="486">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -128,12 +111,12 @@
         <option value="$PROJECT_DIR$/cliqo/mod_old.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/base.html" />
         <option value="$PROJECT_DIR$/cliqo/forms.py" />
-        <option value="$PROJECT_DIR$/cliqo/models.py" />
-        <option value="$PROJECT_DIR$/cliqo/admin.py" />
         <option value="$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html" />
-        <option value="$PROJECT_DIR$/cliqo/views.py" />
         <option value="$PROJECT_DIR$/cliqo/urls.py" />
         <option value="$PROJECT_DIR$/cliqolaw/settings.py" />
+        <option value="$PROJECT_DIR$/cliqo/views.py" />
+        <option value="$PROJECT_DIR$/cliqo/models.py" />
+        <option value="$PROJECT_DIR$/cliqo/admin.py" />
       </list>
     </option>
   </component>
@@ -205,16 +188,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cliqo/static/cliqo" />
-      <recent name="$PROJECT_DIR$/_bin" />
-      <recent name="$PROJECT_DIR$/tests/cliqo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cliqo" />
       <recent name="$PROJECT_DIR$/cliqo/templates/cliqo" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/tests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cliqo/static/cliqo" />
+      <recent name="$PROJECT_DIR$/_bin" />
+      <recent name="$PROJECT_DIR$/tests/cliqo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,7 +235,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32913166" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32913166" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
@@ -289,29 +272,9 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/cliqo/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/nav.html" />
     <entry file="file://$PROJECT_DIR$/cliqo/static/cliqo/css/sb-admin-2.min.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.coveragerc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cliqolaw/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -332,26 +295,7 @@
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/cliqo/test_views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/matters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/cliqo/test_models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/matters.html" />
     <entry file="file://$PROJECT_DIR$/cliqo/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-128" />
@@ -416,13 +360,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_collaborator.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_collaborator.html" />
     <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/new_collaborator.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -430,16 +368,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_create_client_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/mod_old.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_create_client_info.html" />
+    <entry file="file://$PROJECT_DIR$/cliqo/mod_old.py" />
     <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_create.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
@@ -468,16 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/mod_copy.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -492,46 +412,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/models.py">
+    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+        <state relative-caret-position="261">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/templates/cliqo/newmatter_main.html">
+    <entry file="file://$PROJECT_DIR$/.coveragerc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state relative-caret-position="42">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.coverage">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-686">
+          <caret line="43" column="18" lean-forward="true" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
+          <folding>
+            <element signature="e#309#318#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cliqo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
+        <state relative-caret-position="252">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqo/views.py">
+    <entry file="file://$PROJECT_DIR$/cliqo/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="56" lean-forward="true" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
+        <state relative-caret-position="42">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/cliqo/test_views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding>
-            <element signature="e#0#54#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cliqolaw/settings.py">
+    <entry file="file://$PROJECT_DIR$/tests/cliqo/test_models.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="-843">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cliqo/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
-            <element signature="e#309#318#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import NewMatter, NewClient, NewContact, CollaboratorInfo, Outcome
+from .models import NewMatter
 
 
 class NewMatterAdmin(admin.ModelAdmin):
@@ -9,24 +9,14 @@ class NewMatterAdmin(admin.ModelAdmin):
               'hour_estimate', 'hourly_rate']
 
 
-class NewClientAdmin(admin.ModelAdmin):
-    fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
-
-
-class NewContactAdmin(admin.ModelAdmin):
-    fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
-
-
-class CollaboratorInfoAdmin(admin.ModelAdmin):
-    fields = ['ref', 'full_name', 'phone_number', 'role', 'email']
-
-
-class OutcomeAdmin(admin.ModelAdmin):
-    fields = ['ref', 'goal']
+# class NewClientAdmin(admin.ModelAdmin):
+#     fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
+#
+#
+# class NewContactAdmin(admin.ModelAdmin):
+#     fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
 
 
 admin.site.register(NewMatter, NewMatterAdmin)
-admin.site.register(NewClient, NewClientAdmin)
-admin.site.register(NewContact, NewContactAdmin)
-admin.site.register(CollaboratorInfo, CollaboratorInfoAdmin)
-admin.site.register(Outcome, OutcomeAdmin)
+# admin.site.register(NewClient, NewClientAdmin)
+# admin.site.register(NewContact, NewContactAdmin)
