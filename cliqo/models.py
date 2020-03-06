@@ -16,8 +16,6 @@ class NewMatter(models.Model):
 class NewClient(models.Model):
     ref = models.ForeignKey(NewMatter, to_field='reference_number',
                             on_delete=models.CASCADE, verbose_name='Reference Number')
-    client_name = models.ForeignKey(NewMatter, to_field='client_name',
-                                    on_delete=models.CASCADE, verbose_name='Client Name')
     client_phone = models.CharField(max_length=20, default="+27123456789")
     client_email = models.EmailField(default="client@domain.com")
     client_address = models.TextField(default="Client Address")
