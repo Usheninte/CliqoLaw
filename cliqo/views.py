@@ -14,7 +14,7 @@ def dashboard(request):
 
 class CreateMatterMain(generic.CreateView):
     model = NewMatter
-    fields = ['reference_number', 'client_name',
+    fields = ['reference_number', 'client_name', 'client_type',
               'nature_of_matter', 'price_estimate',
               'hour_estimate', 'hourly_rate']
     template_name_suffix = '_create'

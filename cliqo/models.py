@@ -2,8 +2,16 @@ from django.db import models
 
 
 class NewMatter(models.Model):
+    PERSON = 'Person'
+    BIZ = 'Business'
+    CLIENT_TYPES = [
+        (PERSON, 'Person'),
+        (BIZ, 'Business')
+    ]
+
     reference_number = models.CharField(max_length=100, unique=True, default="#REF0000")
-    client_name = models.CharField(max_length=250, unique=True, default="Client Name")
+    client_name = models.CharField(max_length=250, default="Client Name")
+    client_type = models.CharField(max_length=8, choices=CLIENT_TYPES, default=PERSON)
     nature_of_matter = models.TextField(default="Nature of Matter")
     price_estimate = models.IntegerField(default=100)
     hour_estimate = models.IntegerField(default=1)

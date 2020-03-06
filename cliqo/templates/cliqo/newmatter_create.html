@@ -14,7 +14,7 @@
             <form action="{% url 'cliqo:create-matter' %}" method="post">
                 {% csrf_token %}
                 <div>
-                    {{ form }}
+                    {{ form.as_p }}
                 </div>
                 <button type="submit" class="btn btn-success btn-icon-split" style="margin-top: 2em">
                     <span class="icon text-white-50">
