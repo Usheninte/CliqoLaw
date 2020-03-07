@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import NewMatter
+from .models import NewMatter, NewContact
 
 
 class NewMatterAdmin(admin.ModelAdmin):
@@ -9,14 +9,10 @@ class NewMatterAdmin(admin.ModelAdmin):
               'hour_estimate', 'hourly_rate']
 
 
-# class NewClientAdmin(admin.ModelAdmin):
-#     fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
-#
-#
-# class NewContactAdmin(admin.ModelAdmin):
-#     fields = ['contact_name', 'contact_phone', 'contact_email', 'contact_address']
+class NewContactAdmin(admin.ModelAdmin):
+    fields = ['ref', 'client_phone', 'client_email', 'client_address',
+              'contact_name', 'contact_phone', 'contact_email', 'contact_address']
 
 
 admin.site.register(NewMatter, NewMatterAdmin)
-# admin.site.register(NewClient, NewClientAdmin)
-# admin.site.register(NewContact, NewContactAdmin)
+admin.site.register(NewContact, NewContactAdmin)

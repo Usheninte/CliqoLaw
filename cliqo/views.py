@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 from .models import NewMatter, NewContact
@@ -67,13 +67,12 @@ class ContactsListView(generic.ListView):
         return context
 
 
-# class CreateContactMain(generic.CreateView):
-#     model = NewContact
-#     template_name = 'cliqo/newcontact_create.html'
-
-
-# class CreateClientMain(generic.CreateView):
-#     model =
+class CreateContactMain(generic.CreateView):
+    model = NewContact
+    template_name = 'cliqo/newcontact_create.html'
+    fields = ['ref', 'client_phone', 'client_email', 'client_address',
+              'contact_name', 'contact_phone', 'contact_email', 'contact_address']
+    success_url = reverse_lazy('cliqo:contacts')
 
 
 # Functional form handling

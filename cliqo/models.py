@@ -18,7 +18,7 @@ class NewMatter(models.Model):
     hourly_rate = models.IntegerField(default=100)
 
     def __str__(self):
-        return "{}'s Matter".format(self.client_name)
+        return "{}'s Matter - {}".format(self.client_name, self.reference_number)
 
 
 class NewContact(models.Model):

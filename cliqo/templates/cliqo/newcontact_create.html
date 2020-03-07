@@ -5,13 +5,13 @@
 {% block content %}
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between col-12">
-        <h1 class="h3 mb-0 text-gray-800">New matter</h1>
+        <h1 class="h3 mb-0 text-gray-800">New contact</h1>
     </div>
 
     <!-- Content Row -->
     <div class="row">
         <div class="col-4" style="padding: 2em 4em;">
-            <form action="{% url 'cliqo:create-matter' %}" method="post">
+            <form action="{% url 'cliqo:create-contact' %}" method="post">
                 {% csrf_token %}
                 <div>
                     {{ form.as_p }}
