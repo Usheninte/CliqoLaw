@@ -75,6 +75,15 @@ class CreateContactMain(generic.CreateView):
     success_url = reverse_lazy('cliqo:contacts')
 
 
+class ContactsMainView(generic.DetailView):
+    model = NewContact
+    template_name = 'cliqo/newcontact_main.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(ContactsMainView, self).get_context_data(**kwargs)
+        context['contacts'] = NewContact.objects.filter(pk=self.get_object().pk)
+        return context
+
 # Functional form handling
 # def view_name(request):
 #     if request.method == 'POST':

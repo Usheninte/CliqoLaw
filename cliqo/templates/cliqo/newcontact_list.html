@@ -21,10 +21,10 @@
               <div class="card-body">
                   <div class="row no-gutters align-items-center">
                       <div class="col">
-                          <div class="text-lg font-weight-bold text-info text-uppercase">Contact Name</div>
+                          <div class="text-lg font-weight-bold text-info text-uppercase">{{ contact.contact_name }}</div>
                       </div>
                       <div class="col-7">
-                          <h6 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">Contact Email</h6>
+                          <h6 class="h5 mb-0 mr-3 font-weight-bold text-gray-800">{{ contact.contact_email }}</h6>
                       </div>
                       <div class="col-1">
                           <a href="{% url 'cliqo:contact-focus' contact.id %}" class="btn btn-success btn-circle">

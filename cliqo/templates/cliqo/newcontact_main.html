@@ -1,0 +1,54 @@
+{% extends 'cliqo/base.html' %}
+
+{% load static %}
+{% load mathfilters %}
+
+{% block content %}
+
+{% for contact in contacts %}
+<!-- Page Heading -->
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <a href="{% url 'cliqo:contacts' %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <i class="fas fa-arrow-left fa-sm text-white-50"></i> Back</a>
+
+    <h1 class="h3 mb-0 text-gray-800">{{ contact.contact_name }}</h1>
+
+    <a href="{% url 'cliqo:update-contact' contact.id %}" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        Edit <i class="fas fa-pen fa-sm text-white-50"></i></a>
+</div>
+
+<div class="row">
+    <div class="col-lg-6 mb-3">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Contact Details</h6>
+            </div>
+            <div class="card-body">
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.contact_phone }}</p>
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.contact_email }}</p>
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.contact_address }}</p>
+           </div>
+       </div>
+    </div>
+    <div class="col-lg-6 mb-3">
+        <div class="card shadow mb-4">
+            <div class="card-header py-3">
+                <h6 class="m-0 font-weight-bold text-primary">Client Details</h6>
+            </div>
+            <div class="card-body">
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.client_phone }}</p>
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.client_email }}</p>
+                <p class="h5 mb-0 text-gray-800"></p>
+                <p>{{ contact.client_address }}</p>
+           </div>
+       </div>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock %}

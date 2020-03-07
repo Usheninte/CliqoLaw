@@ -12,4 +12,5 @@ urlpatterns = [
     path('main/mtr-<int:pk>', views.MattersMainView.as_view(), name="matter-focus"),
     path('contacts', views.ContactsListView.as_view(), name="contacts"),
     path('create-contact', views.CreateContactMain.as_view(), name="create-contact"),
+    path('main/contact-<int:pk>', views.ContactsMainView.as_view(), name="contact-focus")
 ]
