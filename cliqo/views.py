@@ -60,10 +60,16 @@ class MattersUpdateView(generic.UpdateView):
 
 class ContactsListView(generic.ListView):
     model = NewContact
+    template_name = 'cliqo/newcontact_list.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
+
+
+# class CreateContactMain(generic.CreateView):
+#     model = NewContact
+#     template_name = 'cliqo/newcontact_create.html'
 
 
 # class CreateClientMain(generic.CreateView):

@@ -10,5 +10,5 @@ urlpatterns = [
     path('delete-matter/<int:pk>', views.MattersDeleteView.as_view(), name="delete-matter"),
     path('update-matter/<int:pk>', views.MattersUpdateView.as_view(), name="update-matter"),
     path('main/mtr-<int:pk>', views.MattersMainView.as_view(), name="matter-focus"),
-    path('contacts', views.CreateMatterMain.as_view(), name="contacts")
+    path('contacts', views.ContactsListView.as_view(), name="contacts")
 ]
