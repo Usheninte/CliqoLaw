@@ -48,14 +48,14 @@ class MattersMainView(generic.DetailView):
 
 class MattersUpdateView(generic.UpdateView):
     model = NewMatter
-    fields = ['reference_number', 'client_name',
+    fields = ['reference_number', 'client_name', 'client_type',
               'nature_of_matter', 'price_estimate',
               'hour_estimate', 'hourly_rate']
     template_name = 'cliqo/newmatter_update.html'
 
     def get_success_url(self):
-        user_id = self.kwargs['pk']
-        return reverse_lazy('cliqo:matter-focus', kwargs={'pk': user_id})
+        matter_id = self.kwargs['pk']
+        return reverse_lazy('cliqo:matter-focus', kwargs={'pk': matter_id})
 
 
 class ContactsListView(generic.ListView):
@@ -83,6 +83,18 @@ class ContactsMainView(generic.DetailView):
         context = super(ContactsMainView, self).get_context_data(**kwargs)
         context['contacts'] = NewContact.objects.filter(pk=self.get_object().pk)
         return context
+
+
+class ContactsUpdateView(generic.UpdateView):
+    model = NewContact
+    fields = ['client_phone', 'client_email', 'client_address',
+              'contact_name', 'contact_phone', 'contact_email', 'contact_address']
+    template_name = 'cliqo/newcontact_update.html'
+
+    def get_success_url(self):
+        contact_id = self.kwargs['pk']
+        return reverse_lazy('cliqo:contact-focus', kwargs={'pk': contact_id})
+
 
 # Functional form handling
 # def view_name(request):
