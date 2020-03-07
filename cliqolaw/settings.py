@@ -40,8 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cliqo.apps.CliqoConfig',
-    'mathfilters',
+    'cliqo.apps.CliqoConfig',  # internal application
+    'mathfilters',  # math operations
+    'main.apps.MainConfig',  # external application
 ]
 
 MIDDLEWARE = [

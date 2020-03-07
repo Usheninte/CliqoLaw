@@ -46,7 +46,6 @@ class Tasks(models.Model):
 
     ref = models.ForeignKey(NewMatter, to_field='reference_number',
                             on_delete=models.CASCADE, verbose_name='Reference Number')
-    task = models.CharField(max_length=250, default="Task")
     billing = models.CharField(max_length=12, choices=BILLING_CHOICES, default=BILL)
 
     def __str__(self):
