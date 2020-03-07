@@ -21,7 +21,7 @@ class NewMatter(models.Model):
         return "{}'s Matter".format(self.client_name)
 
 
-class NewClient(models.Model):
+class NewContact(models.Model):
     ref = models.ForeignKey(NewMatter, to_field='reference_number',
                             on_delete=models.CASCADE, verbose_name='Reference Number')
     client_phone = models.CharField(max_length=20, default="+27123456789")

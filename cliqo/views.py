@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.urls import reverse_lazy
 from django.views import generic
-from .models import NewMatter
+from .models import NewMatter, NewContact
 
 
 def home(request):
@@ -12,32 +12,33 @@ def dashboard(request):
     return render(request, 'cliqo/dashboard.html')
 
 
-class CreateMatterMain(generic.CreateView):
-    model = NewMatter
-    fields = ['reference_number', 'client_name', 'client_type',
-              'nature_of_matter', 'price_estimate',
-              'hour_estimate', 'hourly_rate']
-    template_name_suffix = '_create'
-    success_url = reverse_lazy('cliqo:matters')
-
-
 class MattersListView(generic.ListView):
     model = NewMatter
+    template_name = 'cliqo/newmatter_list.html'
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
 
 
+class CreateMatterMain(generic.CreateView):
+    model = NewMatter
+    fields = ['reference_number', 'client_name', 'client_type',
+              'nature_of_matter', 'price_estimate',
+              'hour_estimate', 'hourly_rate']
+    template_name = 'cliqo/newmatter_create.html'
+    success_url = reverse_lazy('cliqo:matters')
+
+
 class MattersDeleteView(generic.DeleteView):
     model = NewMatter
-    template_name_suffix = '_delete'
+    template_name = 'cliqo/newmatter_delete.html'
     success_url = reverse_lazy('cliqo:matters')
 
 
 class MattersMainView(generic.DetailView):
     model = NewMatter
-    template_name_suffix = '_main'
+    template_name = 'cliqo/newmatter_main.html'
 
     def get_context_data(self, **kwargs):
         context = super(MattersMainView, self).get_context_data(**kwargs)
@@ -50,13 +51,27 @@ class MattersUpdateView(generic.UpdateView):
     fields = ['reference_number', 'client_name',
               'nature_of_matter', 'price_estimate',
               'hour_estimate', 'hourly_rate']
-    template_name_suffix = '_update'
+    template_name = 'cliqo/newmatter_update.html'
 
     def get_success_url(self):
         user_id = self.kwargs['pk']
         return reverse_lazy('cliqo:matter-focus', kwargs={'pk': user_id})
 
-# def new_collaborator(request):
+
+class ContactsListView(generic.ListView):
+    model = NewContact
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        return context
+
+
+# class CreateClientMain(generic.CreateView):
+#     model =
+
+
+# Functional form handling
+# def view_name(request):
 #     if request.method == 'POST':
 #         new_collaborator_form = CollaboratorInfoForm(request.POST)
 #         if new_collaborator_form.is_valid():
