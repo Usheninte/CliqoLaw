@@ -36,17 +36,18 @@ class NewContact(models.Model):
         return "{} (Contact for) {}".format(self.contact_name, self.ref)
 
 
-class Tasks(models.Model):
-    BILL = 'Billable'
-    NON_BILL = 'Non-billable'
-    BILLING_CHOICES = [
-        (BILL, 'Billable'),
-        (NON_BILL, 'Non-billable')
-    ]
+# class Tasks(models.Model):
+#     BILL = 'Billable'
+#     NON_BILL = 'Non-billable'
+#     BILLING_CHOICES = [
+#         (BILL, 'Billable'),
+#         (NON_BILL, 'Non-billable')
+#     ]
+#
+#     ref = models.ForeignKey(NewMatter, to_field='reference_number',
+#                             on_delete=models.CASCADE, verbose_name='Reference Number')
+#     billing = models.CharField(max_length=12, choices=BILLING_CHOICES, default=BILL)
+#
+#     def __str__(self):
+#         return "{} - {}".format(self.ref, self.task)
 
-    ref = models.ForeignKey(NewMatter, to_field='reference_number',
-                            on_delete=models.CASCADE, verbose_name='Reference Number')
-    billing = models.CharField(max_length=12, choices=BILLING_CHOICES, default=BILL)
-
-    def __str__(self):
-        return "{} - {}".format(self.ref, self.task)

@@ -2,10 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
 from .models import NewMatter, NewContact
-
-
-def home(request):
-    return render(request, 'cliqo/home.html')
+from todo.models import Task
 
 
 def dashboard(request):
@@ -94,6 +91,16 @@ class ContactsUpdateView(generic.UpdateView):
     def get_success_url(self):
         contact_id = self.kwargs['pk']
         return reverse_lazy('cliqo:contact-focus', kwargs={'pk': contact_id})
+
+
+class TasksBillingView(generic.ListView):
+    model = Task
+    template_name = 'cliqo/tasks_billing.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['billings'] = Task.objects.all()
+        return context
 
 
 # Functional form handling

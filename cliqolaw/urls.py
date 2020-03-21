@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-import cliqo.views as cliqo_views
+import main.views as main_views
 
 urlpatterns = [
     path('inhouse/', admin.site.urls),
     path('app/', include('cliqo.urls')),
-    path('', cliqo_views.home, name='index')
+    path('', include('main.urls')),
+    path('app/tasks/', include('todo.urls')),
+    path('', main_views.home, name='index'),
 ]

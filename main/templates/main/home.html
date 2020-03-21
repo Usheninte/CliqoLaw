@@ -1,19 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>CliqoLaw</title>
-</head>
-<body>
+{% extends 'main/base.html' %}
 
-<h1>Homepage</h1>
+{% block content %}
 
-<nav>
-    <ul>
-        <li><a href="">Login</a></li>
-        <li><a href="">Logout</a></li>
-    </ul>
-</nav>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8">
+            <div class="card text-center animated fadeInDown">
+                <h1 class="card-header">
+                    <span id="logo"
+                        >Cliqo<span class="blue">law</span></span
+                    >
+                </h1>
+                <div class="card-body">
+                    <h5 class="card-title underline">Welcome</h5>
+                    <p class="card-text">
+                        A client collaboration platform that enables
+                        lawyers to share activity updates,
+                        <br />information and documents in order to
+                        reduce time wasted on client related
+                        administration.
+                    </p>
+                    <a
+                        href="{% url 'main:login' %}"
+                        class="btn btn-primary"
+                        >Login</a
+                    >
 
-</body>
-</html>
+                    <br />
+                    <br />
+
+                    <a
+                        href="{% url 'main:signup' %}"
+                        class="btn btn-outline-primary"
+                        >Sign Up</a
+                    >
+                </div>
+            </div>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+
+{% endblock %}

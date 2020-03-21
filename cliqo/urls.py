@@ -14,4 +14,5 @@ urlpatterns = [
     path('create-contact', views.CreateContactMain.as_view(), name="create-contact"),
     path('main/contact-<int:pk>', views.ContactsMainView.as_view(), name="contact-focus"),
     path('update-contact/<int:pk>', views.ContactsUpdateView.as_view(), name="update-contact"),
+    path('main/billings', views.TasksBillingView.as_view(), name="billings")
 ]

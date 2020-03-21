@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CliqoLaw</title>
+        <meta
+            name="description"
+            content="A client collaboration platform that enables lawyers to share activity updates, information and documents  in order to reduce time wasted on client related administration."
+        />
+        <!-- Bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        />
+        <!-- Animate.css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+        />
+        <!-- Styling -->
+        <style>
+            /* Google Font: Noto Sans */
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+            body {
+                background-image: url('https://res.cloudinary.com/hdeabhqp1/image/upload/v1583925518/background_image_mnh550.jpg');
+                font-family: 'Noto Sans', sans-serif;
+                font-size: 16px;
+                margin: 2em;
+                background-color: #232425;
+            }
+
+            #logo {
+                font-weight: bold;
+            }
+
+            .blue {
+                color: #167bff;
+            }
+
+            .underline {
+                text-decoration: underline;
+                text-decoration-color: #167bff;
+            }
+        </style>
+    </head>
+    <body>
+
+    {% block content %}{% endblock %}
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

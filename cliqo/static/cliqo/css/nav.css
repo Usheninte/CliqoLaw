@@ -1,0 +1,13 @@
+.navigation {
+    height: 100%;
+}
+
+.footer-fixed {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   padding: 0.4em;
+   width: 100%;
+   background-color: #3259ca;
+   color: #f0f0f0;
+}

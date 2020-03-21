@@ -1,5 +1,6 @@
 asgiref==3.2.3
 attrs==19.3.0
+bleach==3.1.1
 cachetools==4.0.0
 certifi==2019.11.28
 chardet==3.0.4
@@ -32,6 +33,7 @@ py==1.8.1
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pyparsing==2.4.6
+pytest==5.3.5
 python-dotenv==0.10.3
 pytz==2019.3
 requests==2.22.0
@@ -40,5 +42,6 @@ six==1.14.0
 sqlparse==0.3.0
 urllib3==1.25.7
 wcwidth==0.1.8
+webencodings==0.5.1
 whitenoise==5.0.1
 zipp==2.2.0
